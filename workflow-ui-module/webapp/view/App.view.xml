@@ -1,0 +1,66 @@
+<mvc:View controllerName="workflowuimodule.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:uxap="sap.uxap"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:smartForm="sap.ui.comp.smartform"
+    xmlns:smartField="sap.ui.comp.smartfield"
+    xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <Page xmlns="sap.m" id="headtitle">
+                <uxap:ObjectPageLayout id="ObjectPageLayout">
+
+                    <uxap:sections>
+                        <uxap:ObjectPageSection title="Master Data Approval Form" titleUppercase="false">
+                            <uxap:subSections>
+                                <uxap:ObjectPageSubSection title="Master Data Approval Form" mode="Collapsed" titleUppercase="false">
+                                    <uxap:blocks>
+
+     
+
+                                        <HBox id="_IDGenHBox3">
+		
+                                            <VBox  class="form-element">
+                                                <Label id = "Entity" text="Entity"  />
+                                                <Input id="Entity1" value="{context>/Entity}" editable="false" />
+                                            </VBox>
+                                            <VBox  class="form-element">
+                                                <Label id = "Country" text="Country"  />
+                                                <Input id="Country1" value="{context>/Country}" editable="false"/>
+                                            </VBox>
+                                            <VBox  class="form-element">
+                                                <Label id = "CompanyName" text="Company Name"  />
+                                                <Input id="CompanyName1" value="{context>/CompanyName}" editable="false"/>
+                                            </VBox>
+                                            <VBox  class="form-element">
+                                                <Label id = "ListofDirectors" text="List of Directors"  />
+                                                <Input id="ListofDirectors1" value="{context>/ListofDirectors}" editable="false" />
+                                            </VBox>
+                                            <VBox  class="form-element">
+                                                <Label id = "Admin" text="Admin"  />
+                                                <Input id="Admin1" value="{context>/Admin}" editable="false"/>
+                                            </VBox>
+                                            <VBox  class="form-element">
+                                                <Label id = "Status" text="Status"  />
+                                                <Input id="Status1" value="{context>/Status}" editable="false"/>
+                                            </VBox>
+                                            
+                                        </HBox>
+
+                                     </uxap:blocks>
+                                </uxap:ObjectPageSubSection>
+                            </uxap:subSections>
+                        </uxap:ObjectPageSection>
+                             </uxap:sections>
+                </uxap:ObjectPageLayout>
+
+          
+
+                 </Page>
+        </pages>
+    </App>
+</mvc:View>
